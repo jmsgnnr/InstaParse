@@ -3,6 +3,7 @@ from hashlib import new
 import json
 from this import d
 from typing import final
+import unicodedata
 from unittest import result
 from pandas.io.json import json_normalize
 import pandas as pd
@@ -37,13 +38,14 @@ drop_likes_df = only_chat_df[only_chat_df["content"].str.contains("Liked a messa
 
 drop_likes_df['timestamp_ms'] = pd.to_datetime(drop_likes_df['timestamp_ms'], unit='ms')
 
-drop_likes_df['content'] = drop_likes_df['content'].map(lambda x: re.sub(r'[^\w\s]', '', x))
+# drop_likes_df['content'] = drop_likes_df['content'].map(lambda x: re.sub(r'[^\w\s]', '', x))
 
-print(drop_likes_df)
+# final_df = drop_likes_df['content'].apply(lambda val: unicodedata.normalize('NFKD', val).encode('ascii', 'ignore').decode())
+
 
 #html output test
 
 result_df = drop_likes_df.to_html()
-text_file = open("index.html" , "w", encoding='utf-8')
+text_file = open("index_testttt.html" , "w", encoding='utf-8')
 text_file.write(result_df)
 text_file.close()
