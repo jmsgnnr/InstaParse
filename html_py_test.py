@@ -11,7 +11,7 @@ str_data = file_handle.read()
 file_handle.close()
 my_jobj = json.loads(str_data)
 
-f = codecs.open('out2.html', 'w+', "utf-8")
+f = codecs.open('out222.html', 'w+', "utf-8")
 f.write("Your messages are as follows <br>");
 f.write("__________________________________________________<br><br>")
 
