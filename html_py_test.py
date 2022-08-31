@@ -11,25 +11,24 @@ str_data = file_handle.read()
 file_handle.close()
 my_jobj = json.loads(str_data)
 
-f = codecs.open('out222.html', 'w+', "utf-8")
+f = codecs.open('out.html', 'w+', "utf-8")
 f.write("Your messages are as follows <br>");
 f.write("__________________________________________________<br><br>")
 
 # Latest message will be first! So displaying in the reverse order.
 for i in range (len(my_jobj["messages"]) - 1, -1, -1) :
     sender_name = my_jobj["messages"][i]["sender_name"]
+    # ts = my_jobj['messages'][i]['timestamp_ms']
     try:
         text = my_jobj["messages"][i]["content"]
-        rslt = textwrap.fill(sender_name + ": " + text.translate(non_bmp_map), 50)
+        rslt =  textwrap.fill(sender_name + ": "  +  text.translate(non_bmp_map), 50) 
         for char in text:
             char.encode("ascii")
     except:
         try:
             share_text = my_jobj["messages"][i]["share"]["share_text"]
             link = my_jobj["messages"][i]["share"]["link"]
-            rslt  = textwrap.fill(sender_name + ":  + <img src='"+link+"'>" + share_text.translate(non_bmp_map), 50)
-            for char in share_text:
-                char.encode("ascii")
+            rslt  = textwrap.fill(sender_name + ":   <img src='"+ link +"'>" + share_text.translate(non_bmp_map), 50 ) 
         except:
             # reactions= my_jobj["messages"][i]["reactions"]
             rslt  = sender_name + ": " + 'fix'
