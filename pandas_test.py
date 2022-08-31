@@ -30,7 +30,7 @@ df4['timestamp_ms'] = pd.to_datetime(df4['timestamp_ms'], unit='ms')
 # print(df4)
 print(df4)
 
-#html output needs
+#html output needs latin-1 to parse extra chars in ig download
 result_df = df4.to_html()
 text_file = open("html_test.html" , "w", encoding='LATIN-1')
 text_file.write(result_df)
