@@ -14,14 +14,13 @@ try:
     df1 = df1[df1["content"].str.contains("Liked a message") == False]
     # user may need to change unit type, test data is in Mountain Standard Time
     df1['timestamp_ms'] = pd.to_datetime(df1['timestamp_ms'], unit='ms')
-except:
-    print('this isnt working right, pal')
-finally:
     #html output needs latin-1 to parse extra chars in ig download
     df1_html = df1.to_html()
     with open("html_output.html" , "w", encoding='LATIN-1') as f:
         f.write(df1_html)
-
+except:
+    print('this isnt working right, pal')
+    
 f.close()
 
 
