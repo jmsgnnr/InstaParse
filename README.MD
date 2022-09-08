@@ -18,3 +18,6 @@ Unidecode==1.3.4
 4. add your message history file from your selected convo as message_1.json
 5. run ```py python pandas_test.py ``` in the terminal once your file is added.
 6. To view your html output, we have downloaded the visual studio code extension 'live-server' and used command Alt+L in our html_output.html file to view our chat history!
+
+// mongodb doc storing
+// 
