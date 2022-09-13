@@ -44,18 +44,3 @@ for i in range (len(my_jobj["messages"]) - 1, -1, -1) :
 f.write("<br><br>__________________________________________________<br>")
 f.write("\tScript completed execution!<br><br>");
 f.close()
-
-
-# for row in df_list:
-#     print(row)
-# print(df1)
-# def Convert(df_list):
-#     res_dct = {df_list[i]: df_list[i + 1] for i in range(0, len(df_list), 2)}
-#     return res_dct
-
-# new_dict = Convert(df_list)
-
-# df1 = pd.DataFrame.from_records(new_dict, index=[0])
-# print(df1)
-# df2 = pd.DataFrame(df_list)
-# print(df2)

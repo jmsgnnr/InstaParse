@@ -4,6 +4,7 @@ import pandas as pd
 
 with open('message_11.json', 'r', encoding='UTF-8') as json_file:
     data = json.load(json_file)
+    print(data['messages']['reactions'])
 
 
 try:
@@ -12,7 +13,6 @@ try:
 
     chat_df = chat_df.filter(['sender_name','timestamp_ms','content'])
 
-    
     # grab nested share/reactions
     # chat_df['react'] = chat_df['reactions'].fillna('[]').apply(lambda x: [d['reaction'] for d in x])
 

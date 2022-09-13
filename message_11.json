@@ -1,0 +1,115 @@
+
+{
+  "participants": [
+    {
+      "name": "friend"
+    },
+    {
+      "name": "user"
+    }
+  ],
+  "messages": [
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "friend",
+      "timestamp_ms": 1646512246863,
+      "reactions": [
+        {
+          "reaction": "\u00e2\u009d\u00a4\u00ef\u00b8\u008f",
+          "actor": "user"
+        },
+        {
+          "reaction": "\u00e2\u009d\u00a4\u00ef\u00b8\u008f",
+          "actor": "user"
+        }
+      ],
+      "type": "Share",
+      "is_unsent": false,
+      "is_taken_down": false,
+      "bumped_message_metadata": {
+        "bumped_message": "",
+        "is_bumped": false
+      }
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "user",
+      "timestamp_ms": 1646076938282,
+      "type": "Share",
+      "is_unsent": false,
+      "is_taken_down": false,
+      "bumped_message_metadata": {
+        "bumped_message": "",
+        "is_bumped": false
+      }
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "user",
+      "timestamp_ms": 1645937398259,
+      "share": {
+        "link": "https://www.instagram.com/p/Cad8Z9SO0sd/?feed_type=reshare_chaining&carousel_share_child_media_id=2782645811366546205_281578601",
+        "share_text": "Y\u00e2\u0080\u0099all playin elden ring?",
+        "original_content_owner": "internetnut"
+      },
+      "type": "Share",
+      "is_unsent": false,
+      "is_taken_down": false,
+      "bumped_message_metadata": {
+        "bumped_message": "",
+        "is_bumped": false
+      }
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "user",
+      "timestamp_ms": 1645825525646,
+      "type": "Generic",
+      "is_unsent": false,
+      "is_taken_down": false,
+      "bumped_message_metadata": {
+        "bumped_message": "",
+        "is_bumped": false
+      }
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "friend",
+      "timestamp_ms": 1645641451650,
+      "content": "Works*",
+      "type": "Generic",
+      "is_unsent": false,
+      "is_taken_down": false,
+      "bumped_message_metadata": {
+        "bumped_message": "Works*",
+        "is_bumped": false
+      }
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "friend",
+      "timestamp_ms": 1645641429860,
+      "content": "Also PHP is one of the most sought after languages I'm learning it myself recently and I feel like a genius every time my <?php ?>",
+      "type": "Generic",
+      "is_unsent": false,
+      "is_taken_down": false,
+      "bumped_message_metadata": {
+        "bumped_message": "Also PHP is one of the most sought after languages I'm learning it myself recently and I feel like a genius every time my <?php ?>",
+        "is_bumped": false
+      }
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "friend",
+      "timestamp_ms": 1645641356563,
+      "content": "coooooolio",
+      "type": "Generic",
+      "is_unsent": false,
+      "is_taken_down": false,
+      "bumped_message_metadata": {
+        "bumped_message": "coooooolio",
+        "is_bumped": false
+      }
+    }
+  ]
+}
