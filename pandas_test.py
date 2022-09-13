@@ -1,10 +1,8 @@
 import json
-from pandas import json_normalize
 import pandas as pd
 
-with open('message_11.json', 'r', encoding='UTF-8') as json_file:
+with open('message_1.json', 'r', encoding='UTF-8') as json_file:
     data = json.load(json_file)
-    print(data['messages']['reactions'])
 
 
 try:
